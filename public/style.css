@@ -1,0 +1,105 @@
+:root {
+    /*Color variables*/
+    --background: #56D0AE;
+    --dark: #157145;
+
+    --text: #011627;
+
+    --button: #e2c044;
+    --button-dim: rgb(195, 159, 29);
+    --button-dark: rgb(113, 96, 34);
+
+    --input: #e5e9ee;
+}
+
+*{
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--background);
+}
+
+h3{
+    color: var(--text);
+    text-wrap: balance;
+    text-align: center;
+    margin:0;
+    font-size: 4em;
+}
+
+h4{
+    color: var(--text);
+    text-wrap: balance;
+    text-align: center;
+    margin:0;
+    font-size: 2em;
+}
+
+#username-screen{
+    width:80vw;
+    height:32em;
+    margin:calc((100vh - 24em)/2) auto;
+
+    font-size: 1em;
+}
+
+#username-form {
+    text-align: center;
+    align-content: center;
+}
+#username-form input{
+    font-size: 4em;
+    margin: auto;
+
+    width:80%;
+    padding:0;
+    margin: 0;
+    text-align: center;
+
+    background-color: var(--input);
+    border: solid var(--dark);
+}
+
+#username-form button{
+    font-size: 3.2em;
+    margin-top: 0.8em;
+    background-color: var(--button);
+    border: solid var(--button-dark);
+    color: var(--button-dark);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#username-form button:hover{
+    background-color: var(--button-dim);
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#navbar .username{
+    font-size: 2em;
+    position: absolute;
+    top:0em;
+    left: 0ch;
+    color:var(--dark);
+    user-select: none;
+    width: 36ch;
+    background: none;
+    border: none;
+    margin-left: 0.2em;
+}
+
+#navbar button{
+    font-size: 1.5em;
+    width:2em;
+    height: 2em;
+    margin-top: 0.2em;
+    margin-right: 0.2em;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inscryption</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <div id="username-screen">
+        <h3>Enter a username to play:</h3>
+        <form id="username-form" action="">
+            <input id="username-input" placeholder="Username" maxlength="24" autocomplete="off"/>
+            <br>
+            <button>{ Play }</button>
+        </form>
+    </div>
+
+    <div id="navbar" style="display: none;">
+        <input id="username" class="username" value="username" maxlength="24" autocomplete="off"/>
+        <button id="manual-disconnect">❌</button>
+        <button>⭐</button>
+    </div>
+
+    <div id="menu">
+        <div id=""></div>
+    </div>
+        
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>
